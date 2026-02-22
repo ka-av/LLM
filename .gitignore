@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+
+# Virtual env
+.venv/
+
+# Local secrets
+.env
+
+# Outputs / logs
+outputs/
+*.csv
+
+# OS / Editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
