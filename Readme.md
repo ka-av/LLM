@@ -1,4 +1,4 @@
-# Reward Misspecification (Gemini 2.5 Flash) — Simple GridWorld
+# Reward Misspecification (Gemini 2.5 Flash) : Simple GridWorld
 
 This repo runs a tiny deterministic GridWorld where an LLM (**Gemini 2.5 Flash**) chooses actions. Across episodes we **change the reward signal** to study **reward misspecification** and observe failure modes like reward hacking, looping, stalling, and delayed-feedback confusion.
 
@@ -371,3 +371,4 @@ git push -u origin main
 * Add more proxy signals (e.g., distance-to-goal shaping) and see when it breaks.
 * Add a “trap” tile and test exploration under delayed reward.
 * Add a separate evaluator model to label failure modes more robustly.
+
