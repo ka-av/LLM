@@ -1,13 +1,13 @@
 # Reward Misspecification (Gemini 2.5 Flash) : Simple GridWorld
 
-This repo runs a tiny deterministic GridWorld where an LLM (**Gemini 2.5 Flash**) chooses actions. Across episodes we **change the reward signal** to study **reward misspecification** and observe failure modes like reward hacking, looping, stalling, and delayed-feedback confusion.
+This repo runs a tiny GridWorld where an LLM (**Gemini 2.5 Flash**) chooses actions. Across episodes we **change the reward signal** to study **reward misspecification** and observe failure modes like reward hacking, looping, stalling, and delayed-feedback confusion.
 
 By default it runs **4 short episodes** (one per reward type):
 
-1. **TRUE** — aligned with the intended task (reach the goal efficiently)
-2. **PROXY** — includes a farmable proxy reward that can distract from the goal
-3. **MISLEADING** — strongly encourages the wrong behavior
-4. **DELAYED** — reward is hidden until the end (sparse feedback)
+1. **TRUE** : aligned with the intended task (reach the goal efficiently)
+2. **PROXY** : includes a farmable proxy reward that can distract from the goal
+3. **MISLEADING** : strongly encourages the wrong behavior
+4. **DELAYED** : reward is hidden until the end (sparse feedback)
 
 ---
 
@@ -22,7 +22,7 @@ By default it runs **4 short episodes** (one per reward type):
 
 ## 1) Project structure
 
-Create the project at: `C:\LLM\reward_misspec_grid`
+Created the project at: `C:\LLM\reward_misspec_grid`
 
 ```
 reward_misspec_grid/
@@ -365,10 +365,4 @@ git push -u origin main
 
 ---
 
-## 12) Extensions (optional)
-
-* Run multiple seeds per reward mode to get distributions.
-* Add more proxy signals (e.g., distance-to-goal shaping) and see when it breaks.
-* Add a “trap” tile and test exploration under delayed reward.
-* Add a separate evaluator model to label failure modes more robustly.
 
